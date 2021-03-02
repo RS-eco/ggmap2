@@ -33,6 +33,7 @@ library(sf)
 
 # Load countries shapefile
 data(countries10, package="rnaturalearthhires")
+#data(countriesHigh, package="rworldxtra", envir = environment())
 countries10 <- sf::st_as_sf(countries10)
 
 # Run this

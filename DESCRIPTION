@@ -2,14 +2,14 @@ Package: ggmap2
 Type: Package
 Title: R package to easily create nice maps
 Version: 0.0.1
-Date: 2019-12-09
+Date: 2021-03-02
 Authors@R: person("RS-eco", email = "rs-eco@posteo.de", role = c("cre", "aut"))
 Maintainer: RS-eco <rs-eco@posteo.de>
 Description: R package to create nice maps with ggplot2 using short code snippets. In addition, this packages includes access to a few useful data sets, 
   which can be used for plotting and data analysis.
 Depends: R (>= 3.5.0)
 Imports: rgeos, grDevices, raster, rgdal, sf, stats, scales, parallel, gtable, grid, gridExtra, ggplot2, 
-  graphics, utils, osmar, methods, patchwork, dplyr, sp, tidyr, lubridate
+  graphics, utils, osmar, methods, patchwork, dplyr, sp, tidyr, lubridate, rworldxtra
 Suggests: ncdf4, knitr, plotly
 License: MIT + file LICENSE
 LazyData: TRUE

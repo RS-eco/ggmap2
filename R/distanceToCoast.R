@@ -30,20 +30,15 @@
 #' @keywords spatial
 #' 
 #' @export
-distanceToCoast <- function(ncol, nrow, extent='', inverse=FALSE, ...){
+distanceToCoast <- function(ncol=36, nrow=18, extent='', inverse=FALSE, ...){
   # Create raster
   r <- raster::raster(ncol=ncol,nrow=nrow, vals=1)
 
-  # Load country outline
-  data(countriesHigh, package="rworldxtra", envir = environment())
-  countriesHigh <- rgeos::gPolygonize(rgeos::gNode(as(countriesHigh, "SpatialLines")))
-  outline <- rgeos::gUnaryUnion(countriesHigh); rm(countriesHigh)
-  
   # Save file
   #raster::writeRaster(r, "data/dist_land.tif", format="GTiff")
 
   # Rasterize country outline
-  r_land <- raster::rasterize(outline, r)
+  r_land <- raster::rasterize(as(sf::st_as_sf(ggmap2::outline), "Spatial"), r)
   #r_land <- gdalUtils::gdal_rasterize(b=1, burn=1, l="outline", src_datasource="outline.shp",
   #               dst_filename="data/dist_land.tif", output_Raster=TRUE)
 
