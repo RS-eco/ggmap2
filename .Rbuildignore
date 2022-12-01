@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+data-raw
+README.Rmd
+figures
+geom_northarrow.R
+geom_scalebar.R
+wc10
+cmip5
+LICENSE.md
