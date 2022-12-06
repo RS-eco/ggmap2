@@ -26,7 +26,7 @@
 df_transform <- function(data, coords=c("x","y"), 
                          crs.in=sp::CRS("+init=epsg:4326"), 
                          crs.out=NA){
-  if(class(data) == "data.frame"){
+  if(is(data, "data.frame")){
     data <- raster::rasterFromXYZ(data)
     raster::projection(data) <- crs.in
     data <- raster::projectRaster(data, crs=crs.out)

@@ -7,7 +7,7 @@
 #' @author RS-eco
 #' @import grDevices gtable dplyr graphics ggplot2
 #' @importFrom stats lm sd var rnorm
-#' @importFrom methods as
+#' @importFrom methods as is
 #' @importFrom utils data find download.file read.csv
 #' @keywords package
 #'

@@ -2,7 +2,7 @@ Package: ggmap2
 Type: Package
 Title: R package to easily create nice maps
 Version: 0.0.1
-Date: 2022-10-18
+Date: 2022-12-06
 Authors@R: person("RS-eco", email = "rs-eco@posteo.de", role = c("cre", "aut"))
 Maintainer: RS-eco <rs-eco@posteo.de>
 Description: R package to create nice maps with ggplot2 using short code snippets. In addition, this packages includes access to a few useful data sets, 
@@ -15,7 +15,7 @@ License: GPL (>= 3)
 LazyData: TRUE
 LazyDataCompression: xz
 VignetteBuilder: knitr
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.2
 Encoding: UTF-8
 NeedsCompilation: yes
 Author: RS-eco [cre, aut]
